@@ -6,9 +6,9 @@ import com.soma.bookstore.users.infrastructure.persistence.entity.UserEntity
 import org.springframework.stereotype.Component
 
 @Component
-class UserModelMapper: Mapper<User?, UserEntity>{
+class UserModelMapper: Mapper<User, UserEntity>{
 
-    override fun map(input: UserEntity): User? {
+    override fun map(input: UserEntity): User {
         return User(
             input.id,
             input.name,

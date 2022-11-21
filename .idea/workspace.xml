@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8aa7bdc0-faeb-43fa-b56c-e9c7c039fcf1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/soma/bookstore/users/infrastructure/persistence/repository/user/mapper/UserModelMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/soma/bookstore/users/infrastructure/persistence/repository/user/mapper/UserModelMapper.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e148ae6a-10bc-4ad7-b150-a123deded134" />
+        <option name="url" value="https://github.com/brujokan/users.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FlWrjWDahveBeDqeIwSMgLUovq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/brujo/practicas-microservicios/bookstore/orders&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9bc65c2abec141778ffaa729489f3e87&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.soma.bookstore.users.infrastructure.handler.user_payment.response" />
+      <recent name="com.soma.bookstore.users.infrastructure.handler.user_address.request" />
+      <recent name="com.soma.bookstore.users.infrastructure.persistence.repository.user_address" />
+      <recent name="com.soma.bookstore.users.infrastructure.persistence.repository.user" />
+      <recent name="com.soma.bookstore.users.infrastructure.persistence.repository.user.mapper" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.soma.bookstore.users.infrastructure.handler.user_address.mapper" />
+      <recent name="com.soma.bookstore.users.exception" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UsersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="users" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soma.bookstore.users.UsersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8aa7bdc0-faeb-43fa-b56c-e9c7c039fcf1" name="Changes" comment="" />
+      <created>1665067352829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665067352829</updated>
+      <workItem from="1665067354037" duration="325000" />
+      <workItem from="1665067687421" duration="4910000" />
+      <workItem from="1665729379586" duration="612000" />
+      <workItem from="1665765983531" duration="4684000" />
+      <workItem from="1665815216863" duration="5280000" />
+      <workItem from="1666004579695" duration="4998000" />
+      <workItem from="1666030792455" duration="1687000" />
+      <workItem from="1666084859514" duration="647000" />
+      <workItem from="1666274063982" duration="3884000" />
+      <workItem from="1666339831829" duration="12901000" />
+      <workItem from="1666428413005" duration="627000" />
+      <workItem from="1666714032178" duration="5159000" />
+      <workItem from="1666794695288" duration="4771000" />
+      <workItem from="1666869606346" duration="6331000" />
+      <workItem from="1666957459735" duration="6028000" />
+      <workItem from="1667026425825" duration="11940000" />
+      <workItem from="1667120520016" duration="5454000" />
+      <workItem from="1667230048369" duration="5633000" />
+      <workItem from="1667289259557" duration="3063000" />
+      <workItem from="1667400203399" duration="45000" />
+      <workItem from="1668624714264" duration="769000" />
+      <workItem from="1668704108488" duration="1480000" />
+      <workItem from="1668791525537" duration="1728000" />
+      <workItem from="1668853415033" duration="2638000" />
+      <workItem from="1669041765803" duration="2464000" />
+      <workItem from="1669049257657" duration="18000" />
+      <workItem from="1669050426809" duration="21000" />
+      <workItem from="1669050487131" duration="1377000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
