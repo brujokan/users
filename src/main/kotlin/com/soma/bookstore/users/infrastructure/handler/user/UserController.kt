@@ -45,11 +45,13 @@ class UserController(
         description = "Create new user",
         operationId = "create"
     )
-    @ApiResponses(value = [
-       ApiResponse(responseCode = "201", description = "User successfully created"),
-        ApiResponse(responseCode = "400", description = "Bad request"),
-        ApiResponse(responseCode = "500", description = "Internal server error")
-    ])
+    @ApiResponses(
+        value = [
+            ApiResponse(responseCode = "201", description = "User successfully created"),
+            ApiResponse(responseCode = "400", description = "Bad request"),
+            ApiResponse(responseCode = "500", description = "Internal server error")
+        ]
+    )
     @PostMapping
     fun create(@RequestBody payload: UserCreateUserRequest): ResponseEntity<Void> {
         val user: User = userCreateUseCase.save(userCreateRequestMapper.map(payload))
@@ -63,12 +65,14 @@ class UserController(
         description = "Find user by id",
         operationId = "find"
     )
-    @ApiResponses(value = [
-        ApiResponse(responseCode = "200", description = "User successfully retrieved"),
-        ApiResponse(responseCode = "400", description = "Bad request"),
-        ApiResponse(responseCode = "404", description = "User not found"),
-        ApiResponse(responseCode = "500", description = "Internal server error")
-    ])
+    @ApiResponses(
+        value = [
+            ApiResponse(responseCode = "200", description = "User successfully retrieved"),
+            ApiResponse(responseCode = "400", description = "Bad request"),
+            ApiResponse(responseCode = "404", description = "User not found"),
+            ApiResponse(responseCode = "500", description = "Internal server error")
+        ]
+    )
     @GetMapping("/{user_id}")
     fun findById(@PathVariable("user_id") id: Long): ResponseEntity<UserResponse> {
         return ResponseEntity.ok(userResponseMapper.map(userFindUseCase.findById(id)))
@@ -79,10 +83,12 @@ class UserController(
         description = "Find all users",
         operationId = "find all"
     )
-    @ApiResponses(value = [
-        ApiResponse(responseCode = "200", description = "Users successfully retrieved"),
-        ApiResponse(responseCode = "500", description = "Internal server error")
-    ])
+    @ApiResponses(
+        value = [
+            ApiResponse(responseCode = "200", description = "Users successfully retrieved"),
+            ApiResponse(responseCode = "500", description = "Internal server error")
+        ]
+    )
     @GetMapping
     fun findAll(): ResponseEntity<List<UserResponse>> {
         return ResponseEntity.ok(
@@ -95,14 +101,19 @@ class UserController(
         description = "Update user",
         operationId = "update"
     )
-    @ApiResponses(value = [
-        ApiResponse(responseCode = "200", description = "User successfully updated"),
-        ApiResponse(responseCode = "400", description = "Bad request"),
-        ApiResponse(responseCode = "404", description = "User not found"),
-        ApiResponse(responseCode = "500", description = "Internal server error")
-    ])
+    @ApiResponses(
+        value = [
+            ApiResponse(responseCode = "200", description = "User successfully updated"),
+            ApiResponse(responseCode = "400", description = "Bad request"),
+            ApiResponse(responseCode = "404", description = "User not found"),
+            ApiResponse(responseCode = "500", description = "Internal server error")
+        ]
+    )
     @PutMapping("/{user_id}")
-    fun update(@PathVariable("user_id") id: Long, @RequestBody payload: UserUpdateRequest): ResponseEntity<UserResponse> {
+    fun update(
+        @PathVariable("user_id") id: Long,
+        @RequestBody payload: UserUpdateRequest
+    ): ResponseEntity<UserResponse> {
         return ResponseEntity.ok(
             userResponseMapper.map(userUpdateUseCase.update(id, userUpdateRequestMapper.map(payload)))
         )
@@ -113,12 +124,14 @@ class UserController(
         description = "Delete user",
         operationId = "delete"
     )
-    @ApiResponses(value = [
-        ApiResponse(responseCode = "200", description = "User successfully deleted"),
-        ApiResponse(responseCode = "400", description = "Bad request"),
-        ApiResponse(responseCode = "404", description = "User not found"),
-        ApiResponse(responseCode = "500", description = "Internal server error")
-    ])
+    @ApiResponses(
+        value = [
+            ApiResponse(responseCode = "200", description = "User successfully deleted"),
+            ApiResponse(responseCode = "400", description = "Bad request"),
+            ApiResponse(responseCode = "404", description = "User not found"),
+            ApiResponse(responseCode = "500", description = "Internal server error")
+        ]
+    )
     @DeleteMapping("/{id}")
     fun delete(@PathVariable("id") id: Long) = userDeleteUseCase.delete(id)
 }
