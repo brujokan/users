@@ -1,5 +1,6 @@
 package com.soma.bookstore.users.application.use_case.user.delete
 
+import com.soma.bookstore.users.domain.messaging.UserIdProducer
 import com.soma.bookstore.users.domain.repository.UserAddressRepository
 import com.soma.bookstore.users.domain.repository.UserPaymentRepository
 import com.soma.bookstore.users.domain.repository.UserRepository
@@ -10,7 +11,9 @@ import org.springframework.stereotype.Service
 class UserDeleteUseCase(
     private val repository: UserRepository,
     private val addressRepository: UserAddressRepository,
-    private val paymentRepository: UserPaymentRepository
+    private val paymentRepository: UserPaymentRepository,
+    private val userIdProducer: UserIdProducer
+
 ) {
     fun delete(id: Long) {
         if (repository.existsById(id)) {
@@ -18,6 +21,8 @@ class UserDeleteUseCase(
             paymentRepository.findByUser(id).forEach { p -> paymentRepository.delete(p.id!!) }
 
             repository.delete(id)
+
+            userIdProducer.send(id)
         } else throw NotFoundException("User with id ${id} not exists. Cannot delete")
     }
 }
