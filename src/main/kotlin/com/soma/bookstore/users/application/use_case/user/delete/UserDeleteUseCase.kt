@@ -5,6 +5,7 @@ import com.soma.bookstore.users.domain.repository.UserAddressRepository
 import com.soma.bookstore.users.domain.repository.UserPaymentRepository
 import com.soma.bookstore.users.domain.repository.UserRepository
 import com.soma.bookstore.users.exception.NotFoundException
+import mu.KotlinLogging
 import org.springframework.stereotype.Service
 
 @Service
@@ -15,6 +16,8 @@ class UserDeleteUseCase(
     private val userIdProducer: UserIdProducer
 
 ) {
+
+    private val logger = KotlinLogging.logger {  }
     fun delete(id: Long) {
         if (repository.existsById(id)) {
             addressRepository.findByUser(id).forEach { a -> addressRepository.delete(a.id!!) }
@@ -22,7 +25,12 @@ class UserDeleteUseCase(
 
             repository.delete(id)
 
-            userIdProducer.send(id)
+            try {
+                userIdProducer.send(id)
+            } catch (ex: Exception) {
+                logger.error { "Error: ${ex.message}" }
+            }
+
         } else throw NotFoundException("User with id ${id} not exists. Cannot delete")
     }
 }
