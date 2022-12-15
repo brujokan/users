@@ -1,6 +1,5 @@
 version: '3.3'
 
-
 services:
   users-db:
     container_name: usersdb
@@ -14,10 +13,18 @@ services:
     volumes:
           - db-data:/data/db
     networks:
-      - bookstore
+      - bookstore-users
+
+  users-app:
+    container_name: users-app
+    image: brujokan/bookstore-users:1.0.0
+    ports: 
+      - 8080:8080
+    networks:
+      - bookstore-users
 
 networks:
-    bookstore:
+    bookstore-users:
 
 volumes:
   db-data:
